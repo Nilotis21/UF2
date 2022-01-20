@@ -2,10 +2,8 @@
 #define FUNCTIONS_H_
 
 int validar();
-int aprovados(int);
-int suspensos(int);
-int avgap(int);
-int avgsu(int);
+int calc_not(int);
+float avg_note(int, int);
 
 
 #endif /* FUNCTIONS_H_ */
