@@ -12,16 +12,7 @@ int validar() {
 	return num;
 }
 
-int aprovados(int num) {
-
-	int i = 0;
-	if (num > 4) {
-		i++;
-	}
-	return i;
-}
-
-int suspensos(int num) {
+int calc_not(int num) {
 
 	int i = 0;
 	if (num < 5) {
@@ -30,20 +21,15 @@ int suspensos(int num) {
 	return i;
 }
 
-int avgap(int num) {
+float avg_note(int num, int) {
 
-	int i = 0;
+	int i = 0, j = 0, number = 0;
 	if (num < 5) {
-		i += num;
-	}
-	return i;
-}
-
-int avgsu(int num) {
-
-	int i = 0;
-	if (num < 5) {
-		i += num;
-	}
-	return i;
+    number = num + number;
+		i++;
+	} else {
+    number = num + number;
+		j++;
+  }
+	return number;
 }
