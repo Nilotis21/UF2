@@ -23,7 +23,7 @@ float validar2(char *msg){
 	return num;
 }
 
-void omplir(float *num, float size){
+void omplir(float *num, int size){
 
 	int i;
 
@@ -32,7 +32,7 @@ void omplir(float *num, float size){
 	}
 }
 
-float mitjana(float *num, float size){
+float mitjana(float *num, int size){
 
 	int i;
 	float j = 0;
@@ -43,7 +43,7 @@ float mitjana(float *num, float size){
 	return j / size;
 }
 
-float max(float *num, float size){
+float max(float *num, int size){
 
 	int i;
 	float j = 0;
@@ -56,7 +56,7 @@ float max(float *num, float size){
 	return j;
 }
 
-float min(float *num, float size){
+float min(float *num, int size){
 
 	int i = 0;
 	float j = 1;
