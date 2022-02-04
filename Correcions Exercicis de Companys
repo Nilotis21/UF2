@@ -1,0 +1,65 @@
+Correció a Guillermo: https://github.com/ggines/UF2/tree/main/Exercici%205
+He estat revisant el seu exercici 5 i té dos funcions de validacios que es podrien simplificar i fer-ho per refèrencia amb la següent:
+
+void traspassar(int *num1, int *num2){
+	int aux;
+
+	aux=*num1;
+	*num1=*num2;
+	*num2=aux;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Correció a Oriol:  https://github.com/olaf1816/UF2/tree/main/Activitat_8
+La funció per a elevar de Oriol considero que és una mica laboriosa i té una logica molt complexa. Podem simplificarla amb la següent:
+
+long elevar(long x, long y) {
+
+	long i, aux;
+
+	aux = x;
+	for (i = 1; i < y; i++){
+		x *= aux;
+	}
+	return x;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Correció a Zaida: https://github.com/zaidamorales/UF2/tree/main/ejercicio%204
+El programa de Zaida funcioa correctamet però no té una estructura modula ja que la unica funció externa és una validació simple. Jo li sugero aquestes funcions:
+
+int validar() {
+
+	int num;
+
+	do {
+		printf("Introdueix una nota [1-10]:\n");
+		scanf("%d", &num);
+	} while (num < 0 || num > 10);
+
+	return num;
+}
+
+int calc_not(int num) {
+
+	int i = 0;
+	if (num < 5) {
+		i++;
+	}
+	return i;
+}
+
+float avg_note(int num, int) {
+
+	int i = 0, j = 0, number = 0;
+	if (num < 5) {
+    number = num + number;
+		i++;
+	} else {
+    number = num + number;
+		j++;
+  }
+	return number;
+}
