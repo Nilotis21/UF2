@@ -39,8 +39,9 @@ int valint(char *msg, int ini, int fin) {
 
 void omplir(int *number, int size, int ini, int fin) {
 
+	int i;
 	srand(time(NULL));
-	for (int i = ini; (i < size); i++) {
+	for (i = 0; i < size; i++) {
 		number[i] = ini + rand() % (fin + 1 - ini);
 	}
 }
